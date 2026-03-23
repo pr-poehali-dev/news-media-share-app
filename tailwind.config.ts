@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+			"./1774288858322185642.html"
 	],
 	prefix: "",
 	theme: {
@@ -17,8 +18,16 @@ export default {
 				'2xl': '1400px'
 			}
 		},
+		fontFamily: {
+				'display': ['Cormorant', 'serif'],
+				'sans': ['IBM Plex Sans', 'sans-serif'],
+				'mono': ['IBM Plex Mono', 'monospace'],
+			},
 		extend: {
 			colors: {
+				neon: '#f0a030',
+				'neon-pink': '#e0407a',
+				'neon-blue': '#40b8e0',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -88,7 +97,12 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.4s ease forwards',
+				'slide-up': 'slide-up 0.5s cubic-bezier(0.4,0,0.2,1) forwards',
+			},
+			backgroundImage: {
+				'noise': "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E\")",
 			}
 		}
 	},
